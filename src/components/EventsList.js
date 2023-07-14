@@ -10,10 +10,10 @@ export default function EventsList() {
 
   const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
   const geocodingApiUrl = 'https://geocode.maps.co/reverse';
-  const geocodingApiKey = process.env.REACT_APP_GEOCODING_API_KEY;
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    console.log("in the handle submit" + search)
 
 
     try {
@@ -53,18 +53,16 @@ export default function EventsList() {
                 lat: latitude,
                 lon: longitude,
                 limit: 1,
-                appid: geocodingApiKey,
               },
             });
-            console.log(response.data.display_name) 
-
-            if (response.data?.length > 0) {
-                console.log(response.data.display_name);
-              const locationName = response.data.display_name;
+            console.log(response.data.address.village) 
+            console.log(response.data.display_name);
+              const locationName = response.data.address.village;
               setLocation(locationName);
               setSearch(locationName);
               console.log("serach" + search)
-            }
+              handleSubmit({ preventDefault: () => {} });
+
           } catch (error) {
             console.error(error);
           }
@@ -76,8 +74,7 @@ export default function EventsList() {
     } else {
       console.error('Geolocation is not supported by your browser.');
     }
-
-  };
+};
 
   console.log(location + search)
   return (
