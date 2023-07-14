@@ -24,10 +24,6 @@
   box-shadow: 0px 2px 2px 1px var(--clr-dark);
 }
 
-  /* Link Styling */
-.navbar-nav #nav-link {
-  color: var(--clr-dark);
-  font-weight:bold;
 /* Link Styling */
 .navbar-nav #nav-link {
   color: var(--clr-dark);
@@ -96,4 +92,4 @@
 #navbar-toggler:focus {
   border: 0.25rem solid var(--clr-dark);
   box-shadow: none;
-}}
+}
