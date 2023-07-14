@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import "./App.css";
+import "./index.css";
 import PageNav from "./components/Navbar";
 
 function App() {
