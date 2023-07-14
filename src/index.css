@@ -20,6 +20,7 @@
 /***** NAVBAR STYLING *****/
 #nav-styling {
   background-color: var(--clr-light);
+  background-color: var(--clr-light);
   box-shadow: 0px 2px 2px 1px var(--clr-dark);
 }
 
@@ -27,9 +28,12 @@
 .navbar-nav #nav-link {
   color: var(--clr-dark);
   font-weight:bold;
+/* Link Styling */
+.navbar-nav #nav-link {
+  color: var(--clr-dark);
+  font-weight:bold;
   margin-right: 20px;
   padding: 10px 10px 20px 10px;
-  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -92,4 +96,4 @@
 #navbar-toggler:focus {
   border: 0.25rem solid var(--clr-dark);
   box-shadow: none;
-}
+}}
