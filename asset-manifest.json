@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/aqua-la-vista/static/css/main.4cb69276.css",
-    "main.js": "/aqua-la-vista/static/js/main.844ffc9c.js",
+    "main.css": "/aqua-la-vista/static/css/main.cf0cb632.css",
+    "main.js": "/aqua-la-vista/static/js/main.c5343d93.js",
     "static/js/496.7573ffa3.chunk.js": "/aqua-la-vista/static/js/496.7573ffa3.chunk.js",
-    "static/media/logo.svg": "/aqua-la-vista/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "/aqua-la-vista/static/media/logo.1c72e9f5cbb2ff4b9b3c84b9e3740e0f.svg",
     "index.html": "/aqua-la-vista/index.html",
-    "main.4cb69276.css.map": "/aqua-la-vista/static/css/main.4cb69276.css.map",
-    "main.844ffc9c.js.map": "/aqua-la-vista/static/js/main.844ffc9c.js.map",
+    "main.cf0cb632.css.map": "/aqua-la-vista/static/css/main.cf0cb632.css.map",
+    "main.c5343d93.js.map": "/aqua-la-vista/static/js/main.c5343d93.js.map",
     "496.7573ffa3.chunk.js.map": "/aqua-la-vista/static/js/496.7573ffa3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cb69276.css",
-    "static/js/main.844ffc9c.js"
+    "static/css/main.cf0cb632.css",
+    "static/js/main.c5343d93.js"
   ]
 }
