@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/aqua-la-vista/static/css/main.fdd8dcc1.css",
+    "main.css": "/aqua-la-vista/static/css/main.886e9e51.css",
     "main.js": "/aqua-la-vista/static/js/main.0a1fe84a.js",
     "static/js/496.7573ffa3.chunk.js": "/aqua-la-vista/static/js/496.7573ffa3.chunk.js",
     "static/media/logo-transparent.png": "/aqua-la-vista/static/media/logo-transparent.4b172968396795f6155e.png",
     "index.html": "/aqua-la-vista/index.html",
-    "main.fdd8dcc1.css.map": "/aqua-la-vista/static/css/main.fdd8dcc1.css.map",
+    "main.886e9e51.css.map": "/aqua-la-vista/static/css/main.886e9e51.css.map",
     "main.0a1fe84a.js.map": "/aqua-la-vista/static/js/main.0a1fe84a.js.map",
     "496.7573ffa3.chunk.js.map": "/aqua-la-vista/static/js/496.7573ffa3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdd8dcc1.css",
+    "static/css/main.886e9e51.css",
     "static/js/main.0a1fe84a.js"
   ]
 }
