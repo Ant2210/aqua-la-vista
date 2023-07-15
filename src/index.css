@@ -16,7 +16,7 @@
 }
 
 html, body {
-  overflow: hidden;    
+  /* overflow: hidden;     */
   width: 100%;
   height: 100%;    
   margin: 0;
@@ -176,6 +176,12 @@ footer a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   margin-bottom: 8%;
+}
+
+.carousel-main {
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
