@@ -1,31 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+
 :root {
   --clr-light: #B2B9C3;
   --clr-dark: #575A6A;
   --clr-medium: #779CCD;
+  --clr-purple: #575ABA;
   --clr-optional: #AE5431;
-  --ff-main:
-    --ff-secondary:
+  --ff-main: 'Montserrat', sans-serif;
+  --ff-secondary: "";
 }
 
+:root body {
+  font-family: var(--ff-main);
+}
+
+.purple {
+  color: var(--clr-purple);
+}
+
+/***** NAVBAR STYLING *****/
 #nav-styling {
-  background: linear-gradient(to left, var(--clr-light), var(--clr-medium));
+  background-color: var(--clr-light);
+  background-color: var(--clr-light);
   box-shadow: 0px 2px 2px 1px var(--clr-dark);
 }
 
+/* Link Styling */
 .navbar-nav .nav-link {
-  color: #292929;
-  font-weight: bold;
+  color: var(--clr-dark);
+  font-weight:bold;
   margin-right: 20px;
+  padding: 10px 10px;
 }
 
 @media screen and (max-width: 768px) {
   .navbar-nav .nav-link {
-    max-width: 25%;
-    text-align: center;
+    max-width: fit-content;
   }
 }
 
-/* Underline From Center */
+/* Underline From Center - Link hover styling */
 .hvr-underline-from-center {
   display: inline-block;
   vertical-align: middle;
@@ -43,7 +58,7 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #292929;
+  background: var(--clr-dark);
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -60,20 +75,121 @@
   right: 0;
 }
 
-.test-variable {
-  color: var(--clr-optional);
+/* Logo Styling */
+.navbar-brand #nav-logo {
+  height: 75px;
+  width: auto;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Navbar Burger Icon */
+#navbar-toggler {
+  border-color: var(--clr-dark);
+  transition: border 0.2s ease-in-out;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(87, 90, 186, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbar-toggler:focus {
+  border: 0.25rem solid var(--clr-dark);
+  box-shadow: none;
+}
+
+/***** FOOTER *****/
+footer {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  box-shadow: 0px -2px 2px 1px var(--clr-dark);
+}
+
+footer a {
+  display: inline-block;
+  color: var(--clr-purple);
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+  transform: translateY(-4px);
+}
+
+.social-icon {
+  font-size: 2.5rem; 
+}
+
+#footer-logo {
+  padding: 0.5rem 0;
+  max-width: 100px;
+}
+
+#disclaimer {
+  padding: 0 10px;
+  font-size: 14px;
+  color: var(--clr-dark);
+}
+
+.hero {
+  position: relative; 
+  height: 520px;
+  width: auto;
+  background-image: url("/src/assets/imgs/sea-bg.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10% 0 10%;
+  
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-image {
+  position: relative;
+  height: 80%;
+  width: auto;
+  margin: 20px;
+  filter: drop-shadow(0 0 0.3rem rgb(181, 183, 255));
+}
+
+.hero-header {
+  position: relative;
+  color: var(--clr-dark);
+  font-weight: 500;
+  text-align: center;
+  padding: 0 10% 0 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 8%;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav #nav-link {
+    max-width: fit-content;
+    height: auto;
+  }
+
+  .hero {
+    display: flex;
+    background-image: none;
+    flex-wrap: wrap-reverse
+  }
+
+  .hero-image {
+    width: auto;
+    height: 100%;
+  }
+  
 }

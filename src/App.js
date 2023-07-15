@@ -1,13 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import "./App.css";
+import "./index.css";
 import PageNav from "./components/Navbar";
+<<<<<<< HEAD
 import EventsList from "./components/EventsList";
+=======
+import Footer from "./components/Footer";
+>>>>>>> main
 
 function App() {
     return (
         <>
             <PageNav />
+<<<<<<< HEAD
             <EventsList/>
             <div className="container text-center">              
               <Button variant="primary">Hello</Button>{" "}
@@ -16,6 +21,9 @@ function App() {
               </Button>{" "}
               <Button variant="success">Bootstrap</Button>{" "}
             </div>
+=======
+            <Footer />
+>>>>>>> main
         </>
     );
 }
