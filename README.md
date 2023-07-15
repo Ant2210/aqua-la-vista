@@ -15,10 +15,14 @@ The project is deployed and can be accessed [HERE](https://ant2210.github.io/aqu
 2. [Introduction](#introduction)
 3. [Goal](#goal)
    - [Design Choices](#design-choices)
-   - [Colour](#colour)
+   - [Colours](#colours)
    - [Wireframes](#wireframes)
 4. [Technologies](#technologies)
 5. [Features](#features)
+   - [Home Page](#home-page)
+   - [About](#about)
+   - [Blog](#blog)
+   - [Contact](#contact)
 6. [Testing](#testing)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
@@ -136,6 +140,8 @@ The Aqua La Vista application includes the following pages:
 - Contact
 
 
+## **Home Page**
+
 [image of homepage ]
 
 Includes our logo on the left with navigation menu button on the right.
@@ -146,17 +152,20 @@ Access to the Google Maps search area followed by images with featured events.
 
 Once a search has taken place a list of events will appear in a new browser window //IS THAT CORRECT??
 
-
+## **About**
 [IMAGE OF ABOUT PAGE]
 
 The about page includes information on each member of the team.
 
-
+## **Blog**
 [BLOG PAGE ARTICLE]
 
 The blog includes articles on the benefits of wild swimming for socialisation, mental health and the alleviation of depression and anxiety.
 
 It also includes articles on credits we have given to people who have helped us
+
+
+## **Contact**
 
 [CONTACT page image]
 
