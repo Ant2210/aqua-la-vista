@@ -45,31 +45,27 @@ export default function EventsList() {
           const latitude = position.coords.latitude;
           const longitude = position.coords.longitude;
           try {
-            console.log("in the try")
             const response = await axios.get(geocodingApiUrl, {
               params: {
                 lat: latitude,
                 lon: longitude,
               },
             });
-            console.log(response.data.address.village) 
-            console.log(response.data.display_name);
               const locationName = response.data.address.village;
               setLocation(locationName);
               setSearch(locationName);
-              console.log("serach" + search)
               handleSubmit({ preventDefault: () => {} });
 
           } catch (error) {
-            console.error(error);
-          }
+            setError('Sorry, something went wrong.')
+        }
         },
         (error) => {
-          console.error('Error retrieving location:', error);
+          setError('Error retrieving location');
         }
       );
     } else {
-      console.error('Geolocation is not supported by your browser.');
+      setError('Geolocation is not supported by your browser.');
     }
 };
 
