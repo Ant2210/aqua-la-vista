@@ -10,7 +10,7 @@ function App() {
     return (
         <>
             <PageNav />
-
+            <HeroImage />
             <EventsList />
             <Footer />
         </>
