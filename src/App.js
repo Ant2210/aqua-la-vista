@@ -6,11 +6,12 @@ import Footer from "./components/Footer";
 import HeroImage from "./components/HeroImage";
 import EventsList from "./components/EventsList";
 
+
 function App() {
     return (
         <>
             <PageNav />
-
+            <HeroImage />
             <EventsList />
             <Footer />
         </>
