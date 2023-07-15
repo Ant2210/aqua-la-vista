@@ -75,30 +75,33 @@ export default function EventsList() {
 
   console.log(location + search)
   return (
-    <Container>
-      <h1 className="mt-4 mb-4">Event List</h1>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group>
+    <Container className="my-5">
+      <h1 className="mt-4 mb-4 text-center">Event List</h1>
+      <Form onSubmit={handleSubmit} className="mb-4">
+        <Form.Group className="mb-3">
           <Form.Label>Search by Location:</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Enter location"
-            value={search}
-            onChange={handleChange}
-          />
-        {error && <div className="text-danger">{error}</div>}
+          <div className="d-flex">
+            <Form.Control
+              type="text"
+              placeholder="Enter location"
+              value={search}
+              onChange={handleChange}
+              className="me-2"
+            />
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+            <Button variant="secondary" onClick={handleNearMeClick} className="ms-2">
+              Near Me
+            </Button>
+          </div>
+          {error && <div className="text-danger mt-2">{error}</div>}
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-        <Button variant="secondary" onClick={handleNearMeClick}>
-          Near Me
-        </Button>
       </Form>
       <Row>
         {events.map((event) => (
-          <Col key={event.position} lg={4} md={6} sm={12}>
-            <Card className="mb-4 custom-card">
+          <Col key={event.position} lg={4} md={6} sm={12} className="mb-4">
+            <Card className="custom-card">
               <Card.Body>
                 <Card.Title>{event.title}</Card.Title>
                 <Card.Text>{event.snippet}</Card.Text>
