@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="fixed-bottom">
+        <footer className="container-fluid">
             <Row>
                 <Col xs={4} className="text-center pt-2">
                     <ul className="row list-unstyled">
