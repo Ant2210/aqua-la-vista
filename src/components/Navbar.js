@@ -17,7 +17,6 @@ const PageNav = () => {
                     <Nav className="ms-auto">
                         <Nav.Link
                             href="#home"
-                            id="nav-link"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaHouseChimney />
@@ -26,7 +25,6 @@ const PageNav = () => {
                         </Nav.Link>
                         <Nav.Link
                             href="#link"
-                            id="nav-link"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaCircleQuestion />
@@ -35,16 +33,14 @@ const PageNav = () => {
                         </Nav.Link>
                         <Nav.Link
                             href="#link"
-                            id="nav-link"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaRegNewspaper />
                             </span>
-                            News
+                            Blog
                         </Nav.Link>
                         <Nav.Link
                             href="#link"
-                            id="nav-link"
                             className="hvr-underline-from-center .nav-link-styling">
                             <span className="purple pe-2">
                                 <FaEnvelope />
