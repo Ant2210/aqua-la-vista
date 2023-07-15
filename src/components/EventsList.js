@@ -7,6 +7,7 @@ export default function EventsList() {
   const [events, setEvents] = useState([]);
   const [search, setSearch] = useState('');
   const [location, setLocation] = useState('');
+  const [error, setError] = useState('');
 
   const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
   const geocodingApiUrl = 'https://geocode.maps.co/reverse';
@@ -14,8 +15,7 @@ export default function EventsList() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log("in the handle submit" + search)
-
-
+    setError('')
     try {
       const response = await axios.get(corsAnywhereUrl + 'https://serpapi.com/search', {
         params: {
@@ -26,10 +26,9 @@ export default function EventsList() {
         },
       });
       console.log(response.data)
-
       setEvents(response.data?.events_results || []);
     } catch (error) {
-      console.error(error);
+      setError('Sorry, something went wrong.')
     }
   };
 
@@ -45,14 +44,12 @@ export default function EventsList() {
         async (position) => {
           const latitude = position.coords.latitude;
           const longitude = position.coords.longitude;
-
           try {
             console.log("in the try")
             const response = await axios.get(geocodingApiUrl, {
               params: {
                 lat: latitude,
                 lon: longitude,
-                limit: 1,
               },
             });
             console.log(response.data.address.village) 
@@ -89,6 +86,7 @@ export default function EventsList() {
             value={search}
             onChange={handleChange}
           />
+        {error && <div className="text-danger">{error}</div>}
         </Form.Group>
         <Button variant="primary" type="submit">
           Submit
