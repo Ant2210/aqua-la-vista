@@ -41,7 +41,7 @@ Our team ensured we adhered to the criteria for this project by ensuring:
 ## **INTRODUCTION**
 Aqua La Vista - Saying Goodby to Boring Pools, Hello to Wild Swimming Excitement - is a mobile app designed to encourage exercise, socialisation, and the alleviation of depression and anxiety through the enjoyment of nature with a focus on wild swimming. 
 
-The website provides information about the benefits of wild swimming for health and wellness, along with an interactive map where visitors can search for wild swimming events around the United Kingdom and Ireland.
+The website provides information about the benefits of wild swimming for health and wellness, along with a search area where visitors can search for wild swimming events in their local area and/or around the UK and Ireland.
 
 ## **GOAL** 
 The goal of our app is to educate and provide a resource for information and events on wild swimming.
@@ -108,7 +108,7 @@ Wireframe of website
 ![Image of website wireframe](./src/assets/imgs/alv-wireframe2.png)
 
 ## **TECHNOLOGIES**
-In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+The project used the following technology stack, dependencies, and any technical details related to the project.
 
 ➡️ Bootstrap
 
@@ -120,15 +120,17 @@ In the tech section, we provide information about the technology stack, dependen
 
 ➡️ GitHub
 
-➡️ Google Maps and API 
-
 ➡️ React
-
-➡️ SerpAPI
 
 ➡️ VSCode
 
+➡️ ChatGPT API
 
+Our project has used the ChatGPT API to provide users with personalized recommendations for wild swimming destinations based on their location. Users have two options to receive recommendations: automatic detection of their browser location or manual entry of a specific town or city.
+
+When a user chooses the automatic option, our system utilises the browser's geolocation feature to retrieve their current latitude and longitude coordinates. This information is then passed to the ChatGPT API as input. The model processes the input and generates recommendations based on the user's location, taking into account factors such as nearby lakes, rivers, or coastal areas suitable for wild swimming. The recommendations are returned to the user, providing them with potential destinations to explore.
+
+Alternatively, if a user prefers to enter a specific town or city, they can input their desired location manually. For example, they might type in "Dublin" or "South Wales". The user's input is sent to the ChatGPT API, which interprets the location and generates recommendations specific to that area. The recommendations consider wild swimming spots near the specified town or city, such as nearby beaches, lakes, or reservoirs. By using the ChatGPT API, our system combines the power of natural language processing with geolocation data to deliver personalised recommendations. Whether users opt for automatic location detection or manual entry, they receive suggestions tailored to their preferences and the availability of suitable locations near their town or city. This allows users to discover new and exciting places to enjoy wild swimming activities.
 
 ## **FEATURES**
 
@@ -142,8 +144,6 @@ The Aqua La Vista application includes the following pages:
 
 ## **Home Page**
 
-[image of homepage ]
-
 Includes our logo on the left with navigation menu button on the right.
 
 A vibrant heroimage is included
@@ -153,35 +153,24 @@ Access to the Google Maps search area followed by images with featured events.
 Once a search has taken place a list of events will appear in a new browser window //IS THAT CORRECT??
 
 ## **About**
-[IMAGE OF ABOUT PAGE]
 
 The about page includes information on each member of the team.
 
 ## **Blog**
-[BLOG PAGE ARTICLE]
 
 The blog includes articles on the benefits of wild swimming for socialisation, mental health and the alleviation of depression and anxiety.
 
-It also includes articles on credits we have given to people who have helped us
-
-
 ## **Contact**
-
-[CONTACT page image]
 
 The contact page includes a contact form for anyone who wants to get in touch.
 
 ### **Future Features**
 
-Aqua La Vista has grown in popularity and we are now looking to acquire sponsors with a company ethos of encouraging their staff to use the enjoyment of nature for exercise, socialization, and the alleviation of depression and anxiety. Once sponsors have been acquired we will set up an additional page that will highlight their business.
-
 Members area: The app will be updated to include an area for users to register and share their own wild swimming photos, as well as connect with other users. It will also provide information about water conditions, weather updates, emergency contacts, and safety precautions to ensure a safe wild swimming experience. 
-
 
 ## **TESTING**
 
 validator testing  W3C Markup Validation Service CSS Validator - any others?
-
 
 ## **DEPLOYMENT**
 
@@ -213,20 +202,11 @@ The live version of this project is deployed via GitHub pages. The procedure for
 
 The following is the live link deployed: https://ant2210.github.io/aqua-la-vista/.
 
-
-
 ## **CREDITS**
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
 
-SerpAPI - For providing us with free api credits so that our map works - https://serpapi.com
+Winnie Poaty @winniepoaty - https://www.instagram.com/winniepoaty/ - for giving consent/permission to use her wild swimming photos.
 
-Winnie Poaty @winniepoaty - https://www.instagram.com/winniepoaty/ - for giving consent/permission to use her wild swimming photos
-
-
-## **ACKNOWLEDGEMENTS**
-
-ChaptGPT was used in this project in the following way:
-
-An Ode To Wild Swimming - this poem was written using ChatGPT
+ChaptGPT API to create our search function.
 
 Initial research for potential topics was undertaken using ChatGPT but further research was done and information obtained from ChatGPT was edited and re-written.
