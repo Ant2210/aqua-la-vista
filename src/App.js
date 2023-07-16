@@ -13,8 +13,8 @@ function App() {
         <>
             <PageNav />
             <HeroImage />
-            <CarouselCountries />
             <EventsList />
+            <CarouselCountries />
             <Footer />
         </>
     );
