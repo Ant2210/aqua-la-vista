@@ -1,6 +1,6 @@
 import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
-import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form, Button, Spinner } from 'react-bootstrap';
 import { MapContainer } from 'react-leaflet/MapContainer'
 import { TileLayer } from 'react-leaflet/TileLayer'
 import 'leaflet/dist/leaflet.css';
@@ -22,7 +22,7 @@ const Chat = () => {
   const handleButtonClick = () => {
     if (locationInput.trim() === "") {
       setError(
-        "Please enter a location or click 'Get Recommendations Near Me'"
+        "Please enter a location or click 'Find Nearby'"
       );
       return;
     }
@@ -32,6 +32,7 @@ const Chat = () => {
   };
 
   const sendRequest = (location) => {
+    setError('')
     openai
       .createChatCompletion({
         model: "gpt-3.5-turbo",
@@ -45,10 +46,11 @@ const Chat = () => {
       })
       .then((res) => {
         setResponse(JSON.parse(res.data.choices[0].message.content));
-        console.log(JSON.parse(res.data.choices[0].message.content));
       })
-      .catch((error) => {
-        console.error("Error:", error.response.data);
+      .catch(() => {
+        setError(
+          "Sorry, something went wrong, please try again later'"
+        );
       })
       .finally(() => {
         setIsLoading(false);
@@ -76,48 +78,49 @@ const Chat = () => {
     setLocationInput(event.target.value);
   };
 
-  const handleLocationInputKeyPress = (event) => {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      handleButtonClick();
-    }
-  };
-
   return (
 
 <>
-{/* <MapContainer
-        center={[51.505, -0.09]}
-        zoom={13}
-        scrollWheelZoom={false}
-        style={{ height: '250px', width: '50px' }}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-      </MapContainer> */}
-
-    <div className="chat-div">    
-  <button className="chat-buttons" onClick={handleLocationButtonClick}>
-        Get Recommendations Near Me
-      </button>
-      <button className="chat-buttons" onClick={handleButtonClick}>
-        Get Recommendations Near...
-      </button>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter your town or city here..."
-          value={locationInput}
-          onChange={handleLocationInputChange}
-        />
-        {error && <div className="error-message">{error}</div>}
-      </form>
+<div className="chat-div p-5">
+      <p>Find the best wild water swimming spots:</p>
+      <div className="d-flex flex-column flex-sm-row align-items-sm-center">
+        <form onSubmit={(e) => e.preventDefault()} className="mb-3 mb-sm-0">
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            value={locationInput}
+            onChange={handleLocationInputChange}
+            aria-label="City Input"
+            className="form-control"
+          />
+        </form>
+        <div className="button-group d-flex justify-content-sm-start justify-content-center mt-3 mt-sm-0">
+          <Button
+            className="chat-buttons me-2"
+            type="button"
+            onClick={handleButtonClick}
+            aria-label="Search"
+            style={{ backgroundColor: "#575ABA", color: "white" }}
+          >
+            Search
+          </Button>
+          <Button
+            className="chat-buttons"
+            type="button"
+            onClick={handleLocationButtonClick}
+            aria-label="Find nearby"
+            style={{ backgroundColor: "#575ABA", color: "white" }}
+          >
+            Find nearby
+          </Button>
+        </div>
+      </div>
+      {error && <div className="text-danger mt-3">{error}</div>}
       {isLoading && (
-        <div>
-          Loading... Your results can take a few seconds to come through while
-          our AI Bot thinks about it.
+        <div className="d-flex justify-content-center mt-3">
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
         </div>
       )}
         <Row xs={1} sm={2} md={3} lg={4}>
