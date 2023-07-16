@@ -18,7 +18,7 @@ function App() {
         <>
         <PageNav/>
         <Routes>
-            <Route path="/" element={<HomePage/>}/>
+            <Route exact path="/" element={<HomePage/>}/>
             <Route path="/about" element={< About/>} />
             <Route path="/blog" element={< Blog/>} />
             <Route path="/contact" element={< Contact/>} />

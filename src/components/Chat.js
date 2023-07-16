@@ -1,14 +1,15 @@
-import data from "./data/.data.json";
 import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
+import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
+import { MapContainer } from 'react-leaflet/MapContainer'
+import { TileLayer } from 'react-leaflet/TileLayer'
+import 'leaflet/dist/leaflet.css';
+import { Marker, Popup } from "react-leaflet";
 
-const getData = (info) => data.map((item) => item[info]);
-const key = getData("API_KEY");
-const userMessage = String(getData("message"));
 
 const openai = new OpenAIApi(
   new Configuration({
-    apiKey: key,
+    apiKey: process.env.REACT_APP_CHAT_API_KEY,
   })
 );
 
@@ -16,10 +17,13 @@ const Chat = () => {
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [locationInput, setLocationInput] = useState("");
+  const [error, setError] = useState("");
 
   const handleButtonClick = () => {
     if (locationInput.trim() === "") {
-      alert("Please enter a location or click 'Get Recommendations Near Me'.");
+      setError(
+        "Please enter a location or click 'Get Recommendations Near Me'"
+      );
       return;
     }
 
@@ -28,15 +32,20 @@ const Chat = () => {
   };
 
   const sendRequest = (location) => {
-    const message = { role: "user", content: userMessage.replace("[location]", location) };
-
     openai
       .createChatCompletion({
         model: "gpt-3.5-turbo",
-        messages: [message],
+        messages: [
+          {
+            role: "user",
+            content: `Can you recommend around 5 popular places for open water swimming near ${location}. Preface your response with 'Sure, here are some popular open water swimming locations near (nearest town or city)' followed by the characters \n. Please be detailed in your response and don't mention the Latitude or Longitude of the recommendations. could you create it as only a JSON object with the name of the location, the latitude, longitude and description as sperate items, and remove the introduction sentence
+          `,
+          },
+        ],
       })
       .then((res) => {
-        setResponse(res.data.choices[0].message.content.replace(/"/g, ""));
+        setResponse(JSON.parse(res.data.choices[0].message.content));
+        console.log(JSON.parse(res.data.choices[0].message.content));
       })
       .catch((error) => {
         console.error("Error:", error.response.data);
@@ -44,12 +53,6 @@ const Chat = () => {
       .finally(() => {
         setIsLoading(false);
       });
-  };
-
-  const formatResponse = () => {
-    return response.split("\n").map((line, index) => (
-      <p key={index}>{line}</p>
-    ));
   };
 
   const handleLocationButtonClick = () => {
@@ -81,8 +84,22 @@ const Chat = () => {
   };
 
   return (
-    <div className="chat-div">
-      <button className="chat-buttons" onClick={handleLocationButtonClick}>
+
+<>
+{/* <MapContainer
+        center={[51.505, -0.09]}
+        zoom={13}
+        scrollWheelZoom={false}
+        style={{ height: '250px', width: '50px' }}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+      </MapContainer> */}
+
+    <div className="chat-div">    
+  <button className="chat-buttons" onClick={handleLocationButtonClick}>
         Get Recommendations Near Me
       </button>
       <button className="chat-buttons" onClick={handleButtonClick}>
@@ -94,20 +111,50 @@ const Chat = () => {
           placeholder="Enter your town or city here..."
           value={locationInput}
           onChange={handleLocationInputChange}
-          onKeyPress={handleLocationInputKeyPress}
         />
+        {error && <div className="error-message">{error}</div>}
       </form>
       {isLoading && (
         <div>
-          Loading... Your results can take a few seconds to come through while our AI Bot thinks about it.
+          Loading... Your results can take a few seconds to come through while
+          our AI Bot thinks about it.
         </div>
       )}
-      {!isLoading && response && (
-        <div>
-          <div className="chat-div-2">{formatResponse()}</div>
-        </div>
-      )}
+        <Row xs={1} sm={2} md={3} lg={4}>
+      {response.locations?.map((location, index) => (
+        <Col key={index} className="mb-4">
+          <Card className="overflow-hidden">
+            <div className="map-container" style={{ height: '250px' }}>
+              <MapContainer
+                style={{ height: '100%', width: '100%' }}
+                center={[location.latitude, location.longitude]}
+                zoom={7}
+                scrollWheelZoom={false}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={[location.latitude, location.longitude]}>
+                  <Popup>{location.name}</Popup>
+                </Marker>
+              </MapContainer>
+            </div>
+
+            <Card.Body>
+              <Card.Title>
+                <h3>{location.name}</h3>
+              </Card.Title>
+              <Card.Text>
+                <p>{location.description}</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
     </div>
+    </>
   );
 };
 

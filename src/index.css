@@ -202,6 +202,21 @@ footer a:hover {
   margin: 0 auto;
 }
 
+.recommendation-list {
+  margin-top: 10%;
+}
+
+.leaflet-map {
+  height: 300px; /* Adjust the height as needed */
+}
+
+.leaflet-container  {
+  width: 100% !important;
+  overflow: hidden;
+  background-color: #779CCD;
+
+}
+
 .chat-div {
   margin: 50px 50px;
   width: 80%;
@@ -313,6 +328,17 @@ footer a:hover {
   padding-left: 4%;
 }
 
+
+/***** CONTACT FORM *****/
+#contact-form-container {
+  max-width: 600px;
+  font-weight: bold;
+  color: var(--clr-dark);
+}
+
+form .form-control {
+  border: 2px solid rgba(87, 90, 186, 0.6);
+}
 
 @media screen and (max-width: 768px) {
   .navbar-nav #nav-link {

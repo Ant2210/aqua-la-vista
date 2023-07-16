@@ -41,7 +41,28 @@ Our team ensured we adhered to the criteria for this project by ensuring:
 ## **INTRODUCTION**
 Aqua La Vista - Saying Goodby to Boring Pools, Hello to Wild Swimming Excitement - is a mobile app designed to encourage exercise, socialisation, and the alleviation of depression and anxiety through the enjoyment of nature with a focus on wild swimming. 
 
-The website provides information about the benefits of wild swimming for health and wellness, along with an interactive map where visitors can search for wild swimming events around the United Kingdom and Ireland.
+The website provides information about the benefits of wild swimming for health and wellness, along with a search area where visitors can search for wild swimming events in their local area and/or around the UK and Ireland.
+
+## **GOAL** 
+The goal of our app is to educate and provide a resource for information and events on wild swimming.
+
+
+➡️ **Problem Statement**
+
+Post pandemic, mental health issues are on the rise and more people are leading sedentary lifestyles resulting in various health issues such as depression, anxiety, and a lack of physical exercise. The British Journal of child health produced a report in April 2021 on the reduced physical activity and increased sedentary behaviour of young people since 2020.
+
+Additionally, people may not be aware of the benefits on wild swimming as a way to enjoy nature, socialise with others, make new friends, and improve overall well-being.
+
+➡️ **Objectives**
+
+The objectives of the Aqua La Vista app is to:
+
+- Raise awareness: Educate users about the benefits of wild swimming, including physical exercise, fostering friendships, embracing nature and the positive impact that wild swimming can have on mental health.
+
+- Encourage participation: We want to motivate our users to engage in wild swimming activities by providing information about suitable locations, safety guidelines, and group activities.
+
+- Foster community: By providing the ability to search for local events and by featuring events and people who are active in the wild swimming community the app will support the ability to connect with like-minded individuals. 
+
 
 ## **GOAL** 
 The goal of our app is to educate and provide a resource for information and events on wild swimming.
@@ -108,6 +129,7 @@ Wireframe of website
 ![Image of website wireframe](./src/assets/imgs/alv-wireframe2.png)
 
 ## **TECHNOLOGIES**
+
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
 ➡️ Bootstrap
@@ -124,11 +146,11 @@ In the tech section, we provide information about the technology stack, dependen
 
 ➡️ React
 
-➡️ SerpAPI
-
 ➡️ VSCode
 
+➡️ ChatGPT API
 
+Our project has used the ChatGPT API to provide users with personalized recommendations for wild swimming destinations based on their location. Users have two options to receive recommendations: automatic detection of their browser location or manual entry of a specific town or city.
 
 ## **FEATURES**
 
@@ -153,11 +175,13 @@ Access to the Google Maps search area followed by images with featured events.
 Once a search has taken place a list of events will appear in a new browser window //IS THAT CORRECT??
 
 ## **About**
+
 [IMAGE OF ABOUT PAGE]
 
 The about page includes information on each member of the team.
 
 ## **Blog**
+
 [BLOG PAGE ARTICLE]
 
 The blog includes articles on the benefits of wild swimming for socialisation, mental health and the alleviation of depression and anxiety.
@@ -214,7 +238,6 @@ The live version of this project is deployed via GitHub pages. The procedure for
 The following is the live link deployed: https://ant2210.github.io/aqua-la-vista/.
 
 
-
 ## **CREDITS**
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
 
@@ -227,6 +250,6 @@ Winnie Poaty @winniepoaty - https://www.instagram.com/winniepoaty/ - for giving 
 
 ChaptGPT was used in this project in the following way:
 
-An Ode To Wild Swimming - this poem was written using ChatGPT
+ChaptGPT API to create our search function.
 
 Initial research for potential topics was undertaken using ChatGPT but further research was done and information obtained from ChatGPT was edited and re-written.

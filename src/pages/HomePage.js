@@ -1,9 +1,13 @@
 import React from 'react'
 import HeroImage from '../components/HeroImage'
 import { Navbar } from 'react-bootstrap'
+import Chat from '../components/Chat'
 
 export default function HomePage() {
   return (
-    < HeroImage />
+    <div>
+      < HeroImage />
+      <Chat />
+    </div>
   )
 }
