@@ -5,16 +5,23 @@ import PageNav from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeroImage from "./components/HeroImage";
 import EventsList from "./components/EventsList";
-import CarouselCountries from "./components/carouselCountries";
+import { Route, Routes } from "react-router";
+import HomePage from "./pages/HomePage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 function App() {
     return (
         <>
-            <PageNav />
-            <HeroImage />
-            <EventsList />
-            <CarouselCountries />
-            <Footer />
+        <PageNav/>
+        <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/about" element={< About/>} />
+            <Route path="/blog" element={< Blog/>} />
+            <Route path="/contact" element={< Contact/>} />
+            </Routes>
+        <Footer/>
         </>
     );
 }

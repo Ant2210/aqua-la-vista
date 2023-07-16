@@ -16,7 +16,7 @@ const PageNav = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link
-                            href="#home"
+                            href="/"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaHouseChimney />
@@ -24,7 +24,7 @@ const PageNav = () => {
                             Home
                         </Nav.Link>
                         <Nav.Link
-                            href="#link"
+                            href="/about"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaCircleQuestion />
@@ -32,7 +32,7 @@ const PageNav = () => {
                             About
                         </Nav.Link>
                         <Nav.Link
-                            href="#link"
+                            href="/blog"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaRegNewspaper />
@@ -40,7 +40,7 @@ const PageNav = () => {
                             Blog
                         </Nav.Link>
                         <Nav.Link
-                            href="#link"
+                            href="/contact"
                             className="hvr-underline-from-center .nav-link-styling">
                             <span className="purple pe-2">
                                 <FaEnvelope />
