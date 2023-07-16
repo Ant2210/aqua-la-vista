@@ -1,14 +1,10 @@
-import data from "./data/.data.json";
+import { json } from "body-parser";
 import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
 
-const getData = (info) => data.map((item) => item[info]);
-const key = getData("API_KEY");
-const userMessage = String(getData("message"));
-
 const openai = new OpenAIApi(
   new Configuration({
-    apiKey: key,
+    apiKey: process.env.REACT_APP_CHAT_API_KEY,
   })
 );
 
@@ -16,10 +12,11 @@ const Chat = () => {
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [locationInput, setLocationInput] = useState("");
+  const [error, setError] = useState('')
 
   const handleButtonClick = () => {
     if (locationInput.trim() === "") {
-      alert("Please enter a location or click 'Get Recommendations Near Me'.");
+      setError("Please enter a location or click 'Get Recommendations Near Me'");
       return;
     }
 
@@ -28,15 +25,20 @@ const Chat = () => {
   };
 
   const sendRequest = (location) => {
-    const message = { role: "user", content: userMessage.replace("[location]", location) };
-
     openai
       .createChatCompletion({
         model: "gpt-3.5-turbo",
-        messages: [message],
+        messages: [{
+          role: "user",
+          content: `Can you recommend around 5 popular places for open water swimming near ${location}. Preface your response with 'Sure, here are some popular open water swimming locations near (nearest town or city)' followed by the characters \n. Please be detailed in your response and don't mention the Latitude or Longitude of the recommendations. could you create it as only a JSON object with the name of the location, the latitude, longitude and some extra information as sperate items
+          `,
+        
+      }],
       })
       .then((res) => {
-        setResponse(res.data.choices[0].message.content.replace(/"/g, ""));
+        setResponse(JSON.parse(res.data.choices[0].message.content));
+        console.log(JSON.parse(res.data.choices[0].message.content))
+       
       })
       .catch((error) => {
         console.error("Error:", error.response.data);
@@ -46,11 +48,6 @@ const Chat = () => {
       });
   };
 
-  const formatResponse = () => {
-    return response.split("\n").map((line, index) => (
-      <p key={index}>{line}</p>
-    ));
-  };
 
   const handleLocationButtonClick = () => {
     if (isLoading) return;
@@ -94,8 +91,8 @@ const Chat = () => {
           placeholder="Enter your town or city here..."
           value={locationInput}
           onChange={handleLocationInputChange}
-          onKeyPress={handleLocationInputKeyPress}
         />
+          {error && <div className="error-message">{error}</div>}
       </form>
       {isLoading && (
         <div>
@@ -103,8 +100,13 @@ const Chat = () => {
         </div>
       )}
       {!isLoading && response && (
-        <div>
-          <div className="chat-div-2">{formatResponse()}</div>
+        <div className="recommendation-list">
+          {response.locations?.map((location, index) => (
+            <div key={index} className="recommendation-item">
+              <h3>{location.name}</h3>
+              <p>{location.extra_info}</p>
+            </div>
+          ))}
         </div>
       )}
     </div>
