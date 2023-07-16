@@ -1,7 +1,12 @@
-import React from 'react'
 
-export default function Blog() {
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import ContactForm from '../components/ContactForm';
+
+const Contact = () => {
   return (
-    <div>Blog</div>
+    <ContactForm />
   )
 }
+
+export default Contact
