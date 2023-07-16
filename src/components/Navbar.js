@@ -33,7 +33,7 @@ const PageNav = () => {
               <span className="purple pe-2">
                 <FaRegNewspaper />
               </span>
-              Blog
+              Benefits
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="hvr-underline-from-center .nav-link-styling">
               <span className="purple pe-2">
