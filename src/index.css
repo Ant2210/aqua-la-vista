@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 :root {
   --clr-light: #B2B9C3;
   --clr-dark: #575A6A;
@@ -163,6 +161,7 @@ footer a:hover {
 .hero-header {
   color: var(--clr-dark);
   font-weight: 600;
+  font-style: italic;
   text-align: center;
   padding: 3% 3%;
   font-family: 'Montserrat', sans-serif;
@@ -239,6 +238,97 @@ footer a:hover {
   box-shadow: 2px 2px 3px 1px var(--clr-dark);
 }
 
+.article-page-intro {
+  text-align: center;
+  padding: 4% 6%;
+}
+
+.page-title {
+  color: var(--clr-dark);
+  font-size: 2.5em;
+  padding: 4% 0;
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 4%;
+  color: var(--clr-dark);
+  background-color: #fafafa;
+}
+
+.article-container-reverse {
+  flex-direction: row-reverse;
+  background: none;
+}
+
+.article-img {
+  width: 40%;
+  margin: 2%
+}
+
+.article-img img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.article-text {
+  padding: 0 2%;
+  text-align: center;
+  width: 50%;
+}
+
+.article-text h4 {
+  font-weight: 600;
+  margin-bottom: 6%;
+  font-style: italic;
+}
+
+.about-main {
+  width: 100%;
+  height: auto;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 2% 0;
+}
+
+.about-us-text {
+  text-align: center;
+  padding: 0 8%;
+  margin: 2% 0;
+}
+
+.participant-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.participant-info {
+  padding: 2% 4%;
+}
+
+.participant-info p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gitHub-icon {
+  color: var(--clr-dark);
+  font-size: 25px;
+  padding-left: 4%;
+}
+
+
 /***** CONTACT FORM *****/
 #contact-form-container {
   max-width: 600px;
@@ -268,13 +358,35 @@ form .form-control {
   .hero-header {
     position: unset;
     width: 80%;
-    margin:0;
   }
 
   .hero-img-container {
     width: 100%;
   }
 
+  .article-container {
+    flex-direction: column;
+    margin: 2% 6%;
+  }
 
+  .article-img {
+    width: 100%;
+    padding: 0;
+    align-content: flex-start;
+  }
+
+  .article-img img {
+    height: 280px;
+  }
+
+  .article-text {
+    margin: 2% 4%;
+    width: 100%;
+  }
+
+  .page-title {
+    font-size: 2.1em;
+    padding: 6% 2%;
+  }
 
 }
