@@ -1,0 +1,3 @@
+[{
+    "message": "Can you recommend around 5 popular places for open water swimming near [location]. Preface your response with 'Sure, here are some popular open water swimming locations near (nearest town or city)' followed by the characters \n. Please be detailed in your response and don't mention the Latitude or Longitude of the recommendations. Please also append the end of every line with a \n. Add a short safety warning at the end."
+}]
