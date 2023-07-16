@@ -19,9 +19,9 @@ function App() {
         <PageNav/>
         <Routes>
             <Route path="/" element={<HomePage/>}/>
-            <Route path="/about" element={< About/>} />
-            <Route path="/blog" element={< Blog/>} />
-            <Route path="/contact" element={< Contact/>} />
+            <Route path="/aqua-la-vista/about" element={< About/>} />
+            <Route path="/aqua-la-vista/blog" element={< Blog/>} />
+            <Route path="/aqua-la-vista/contact" element={< Contact/>} />
             </Routes>
         <Footer/>
 
