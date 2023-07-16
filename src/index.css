@@ -203,6 +203,27 @@ footer a:hover {
   margin: 0 auto;
 }
 
+.chat-div {
+  margin: 50px 50px;
+  width: 80%;
+  min-height: 300px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.chat-div-2 {
+  padding: 15px;
+}
+
+.chat-buttons {
+  padding: 5px;
+  margin: 10px 10px;
+  background-color: rgb(104, 180, 104);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 1px var(--clr-dark);
+}
+
 @media screen and (max-width: 768px) {
   .navbar-nav #nav-link {
     max-width: fit-content;
