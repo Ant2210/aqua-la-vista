@@ -4,6 +4,7 @@ import img from "../assets/imgs/england.webp";
 import img2 from "../assets/imgs/scotland.webp";
 import img3 from "../assets/imgs/northern-ireland.webp";
 import img4 from "../assets/imgs/wales.webp";
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,11 +13,11 @@ function CarouselCountries() {
     <div className='carousel-main'>
         <Carousel fade>
         <Carousel.Item>
-            <img
+            <Link as= {Link} to="/ireland"><img
             className="d-block w-100 "
             src= {img}
             alt="First slide"
-            />
+            /> </Link>
             <Carousel.Caption>
             <h3>England</h3>
             </Carousel.Caption>
