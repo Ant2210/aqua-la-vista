@@ -18,8 +18,7 @@ function CarouselCountries() {
             alt="First slide"
             />
             <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>England</h3>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -30,8 +29,7 @@ function CarouselCountries() {
             />
 
             <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Scotland</h3>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -42,10 +40,7 @@ function CarouselCountries() {
             />
 
             <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>Northern ireland</h3>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -55,8 +50,7 @@ function CarouselCountries() {
             alt="First slide"
             />
             <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Wales</h3>
             </Carousel.Caption>
         </Carousel.Item>
         </Carousel>
