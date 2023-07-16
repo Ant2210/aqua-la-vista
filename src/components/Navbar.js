@@ -9,14 +9,14 @@ const PageNav = () => {
     return (
         <Navbar expand="md" id="nav-styling">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="https://ant2210.github.io/aqua-la-vista/">
                     <img src={logo} id="nav-logo" alt="logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" id="navbar-toggler" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link
-                            href="/"
+                            href="https://ant2210.github.io/aqua-la-vista/"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaHouseChimney />
@@ -24,7 +24,7 @@ const PageNav = () => {
                             Home
                         </Nav.Link>
                         <Nav.Link
-                            href="/about"
+                            href="https://ant2210.github.io/aqua-la-vista/about"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaCircleQuestion />
@@ -32,7 +32,7 @@ const PageNav = () => {
                             About
                         </Nav.Link>
                         <Nav.Link
-                            href="/blog"
+                            href="https://ant2210.github.io/aqua-la-vista/blog"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaRegNewspaper />
@@ -40,7 +40,7 @@ const PageNav = () => {
                             Blog
                         </Nav.Link>
                         <Nav.Link
-                            href="/contact"
+                            href="https://ant2210.github.io/aqua-la-vista/contact"
                             className="hvr-underline-from-center .nav-link-styling">
                             <span className="purple pe-2">
                                 <FaEnvelope />
