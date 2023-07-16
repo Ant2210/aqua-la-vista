@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/aqua-la-vista/static/css/main.ccb298f0.css",
-    "main.js": "/aqua-la-vista/static/js/main.e2bff6c3.js",
+    "main.js": "/aqua-la-vista/static/js/main.664b7a53.js",
     "static/js/496.bc2e39c6.chunk.js": "/aqua-la-vista/static/js/496.bc2e39c6.chunk.js",
     "static/media/wild-sea-swim.jpeg": "/aqua-la-vista/static/media/wild-sea-swim.965678970b8cc4138160.jpeg",
     "static/media/logo-transparent.png": "/aqua-la-vista/static/media/logo-transparent.4b172968396795f6155e.png",
     "index.html": "/aqua-la-vista/index.html",
     "main.ccb298f0.css.map": "/aqua-la-vista/static/css/main.ccb298f0.css.map",
-    "main.e2bff6c3.js.map": "/aqua-la-vista/static/js/main.e2bff6c3.js.map",
+    "main.664b7a53.js.map": "/aqua-la-vista/static/js/main.664b7a53.js.map",
     "496.bc2e39c6.chunk.js.map": "/aqua-la-vista/static/js/496.bc2e39c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ccb298f0.css",
-    "static/js/main.e2bff6c3.js"
+    "static/js/main.664b7a53.js"
   ]
 }
