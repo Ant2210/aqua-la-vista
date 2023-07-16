@@ -11,8 +11,8 @@ import img8 from "../assets/imgs/aqua-wild-swim4.png"
 const Article = () => {
     return (
         <div>
-            <div class="article-page-intro"> 
-                <h2 class="page-title"> The Health Benefits of Wild Swimming</h2>
+            <div className="article-page-intro"> 
+                <h2 className="page-title"> The Health Benefits of Wild Swimming</h2>
                 <p>
                     Wild swimming, also known as open water swimming (which can be more competitive) is 
                     an amazing way to enjoy being in nature and improving your physical health. Here are 
@@ -20,11 +20,11 @@ const Article = () => {
                 </p>
             </div>
 
-            <div class="article-container">
-                <div class="article-img">
+            <div className="article-container">
+                <div className="article-img">
                     <img src={img1} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Mental well-being</h4>
                     <p>
                         Many people find that wild swimming has a positive impact on their mental health. Being 
@@ -34,11 +34,11 @@ const Article = () => {
                 </div>
             </div>
 
-            <div class="article-container article-container-reverse">
-                <div class="article-img">
+            <div className="article-container article-container-reverse">
+                <div className="article-img">
                     <img src={img2} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Community and social connections</h4>
                     <p>
                         Wild swimming has gained popularity as a social activity, with many groups and communities 
@@ -49,11 +49,11 @@ const Article = () => {
                 </div>
             </div>
 
-            <div class="article-container">
-                <div class="article-img">
+            <div className="article-container">
+                <div className="article-img">
                     <img src={img3} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Adventure and exploration</h4>
                     <p>
                         For some individuals, wild swimming is a way to seek adventure and explore new places. Swimming 
@@ -63,11 +63,11 @@ const Article = () => {
                 </div>
             </div>
 
-            <div class="article-container article-container-reverse">
-                <div class="article-img">
+            <div className="article-container article-container-reverse">
+                <div className="article-img">
                     <img src={img4} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Escaping the constraints of indoor pools</h4>
                     <p>
                         While swimming in a traditional pool can be enjoyable, wild swimming allows swimmers to break 
@@ -77,11 +77,11 @@ const Article = () => {
                 </div>
             </div>
 
-            <div class="article-container">
-                <div class="article-img">
+            <div className="article-container">
+                <div className="article-img">
                     <img src={img5} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Go at your own pace</h4>
                     <p>
                         Wild swimming gives you the space and opportunity you need to go as slow or as fast as you choose, 
@@ -90,11 +90,11 @@ const Article = () => {
                 </div>
             </div>
 
-            <div class="article-container article-container-reverse">
-                <div class="article-img">
+            <div className="article-container article-container-reverse">
+                <div className="article-img">
                     <img src={img6} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Physical health benefits</h4>
                     <p>
                         Swimming is a low-impact, full-body workout that can help improve cardiovascular fitness, strength, 
@@ -104,11 +104,11 @@ const Article = () => {
                 </div>
             </div>
 
-            <div class="article-container">
-                <div class="article-img">
+            <div className="article-container">
+                <div className="article-img">
                     <img src={img7} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Aids Sleep</h4>
                     <p>
                         Enjoying a wild swim can support the increase of a hormone called prolactin in the body. 
@@ -117,11 +117,11 @@ const Article = () => {
                 </div>
             </div>
 
-            <div class="article-container article-container-reverse">
-                <div class="article-img">
+            <div className="article-container article-container-reverse">
+                <div className="article-img">
                     <img src={img8} alt="People swimming in the open water"/>
                 </div>
-                <div class="article-text">
+                <div className="article-text">
                     <h4>Connection with nature</h4>
                     <p>
                         Wild swimming allows individuals to experience a closer connection with nature. Swimming in 

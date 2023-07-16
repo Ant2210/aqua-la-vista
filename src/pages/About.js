@@ -8,9 +8,9 @@ import { FaGithub } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div class="about-main">
-      <div class="article-page-intro">
-        <h2 class="page-title">The Wet and Restless Team</h2>
+    <div className="about-main">
+      <div className="article-page-intro">
+        <h2 className="page-title">The Wet and Restless Team</h2>
         <p>
           The Wet & The Restless team were headed up by Scrum Master Ant who coordinated 
           the completion of this project by making sure tasks were allocated and completed 
@@ -18,52 +18,52 @@ export default function About() {
           individual skills during this collaboration to get their tasks completed.
         </p>
       </div>
-      <div class="about-us-container">
-        <div class="participant-info"> 
-          <img src={img1} class="participant-img"/>
+      <div className="about-us-container">
+        <div className="participant-info"> 
+          <img src={img1} className="participant-img"/>
           <p> Ant 
             <a href="https://github.com/Ant2210" target="_blank">
-              <span class="gitHub-icon">
+              <span className="gitHub-icon">
                 <FaGithub />
               </span>
             </a>
           </p>
         </div>
-        <div class="participant-info"> 
-          <img src={img2} class="participant-img"/>
+        <div className="participant-info"> 
+          <img src={img2} className="participant-img"/>
           <p>Stien
             <a href="https://github.com/Vanhouttestien" target="_blank">
-              <span class="gitHub-icon">
+              <span className="gitHub-icon">
                 <FaGithub />
               </span>
             </a>
           </p>
         </div>
-        <div class="participant-info"> 
-          <img src={img3} class="participant-img"/>
+        <div className="participant-info"> 
+          <img src={img3} className="participant-img"/>
           <p>Diane
             <a href="https://github.com/todiane" target="_blank">
-              <span class="gitHub-icon">
+              <span className="gitHub-icon">
                 <FaGithub />
               </span>
             </a>
           </p>
         </div>
-        <div class="participant-info"> 
-          <img src={img4} class="participant-img"/>
+        <div className="participant-info"> 
+          <img src={img4} className="participant-img"/>
           <p>Jarek
             <a href="https://github.com/JarekB-dev" target="_blank">
-              <span class="gitHub-icon">
+              <span className="gitHub-icon">
                 <FaGithub />
               </span>
             </a>
           </p>
         </div>
-        <div class="participant-info"> 
-          <img src={img5} class="participant-img"/>
+        <div className="participant-info"> 
+          <img src={img5} className="participant-img"/>
           <p>Aiga
             <a href="https://github.com/AiGaA" target="_blank">
-              <span class="gitHub-icon">
+              <span className="gitHub-icon">
                 <FaGithub />
               </span>
             </a>
