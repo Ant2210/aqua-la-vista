@@ -203,6 +203,21 @@ footer a:hover {
   margin: 0 auto;
 }
 
+.recommendation-list {
+  margin-top: 10%;
+}
+
+.leaflet-map {
+  height: 300px; /* Adjust the height as needed */
+}
+
+.leaflet-container  {
+  width: 100% !important;
+  overflow: hidden;
+  background-color: #779CCD;
+
+}
+
 .chat-div {
   margin: 50px 50px;
   width: 80%;
@@ -224,11 +239,6 @@ footer a:hover {
   box-shadow: 2px 2px 3px 1px var(--clr-dark);
 }
 
-.leaflet-container {
-  width: 20px;
-  height: 20px;
-  z-index: 1;
-}
 
 @media screen and (max-width: 768px) {
   .navbar-nav #nav-link {

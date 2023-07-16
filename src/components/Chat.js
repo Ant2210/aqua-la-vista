@@ -1,6 +1,11 @@
 import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
+import { MapContainer } from 'react-leaflet/MapContainer'
+import { TileLayer } from 'react-leaflet/TileLayer'
+import 'leaflet/dist/leaflet.css';
+import { Marker, Popup } from "react-leaflet";
+
 
 const openai = new OpenAIApi(
   new Configuration({
@@ -79,8 +84,22 @@ const Chat = () => {
   };
 
   return (
-    <div className="chat-div">
-      <button className="chat-buttons" onClick={handleLocationButtonClick}>
+
+<>
+{/* <MapContainer
+        center={[51.505, -0.09]}
+        zoom={13}
+        scrollWheelZoom={false}
+        style={{ height: '250px', width: '50px' }}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+      </MapContainer> */}
+
+    <div className="chat-div">    
+  <button className="chat-buttons" onClick={handleLocationButtonClick}>
         Get Recommendations Near Me
       </button>
       <button className="chat-buttons" onClick={handleButtonClick}>
@@ -101,25 +120,34 @@ const Chat = () => {
           our AI Bot thinks about it.
         </div>
       )}
-      {!isLoading && response && (
-        <div className="recommendation-list">
-          {response.locations?.map((location, index) => (
-            <div key={index} className="recommendation-item">
-              <h3>{location.name}</h3>
-              <p>{location.description}</p>
-              <div>
-              <MapContainer center={[location.latitude, location.longitude]} zoom={13}>
-                <TileLayer
-                  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-              </MapContainer>
-            </div>
-            </div>
-          ))}
+    <Row>
+  {response.locations?.map((location, index) => (
+    <Col key={index} lg={6} className="mb-4">
+      <Card className="overflow-hidden" style={{ width: '18rem' }}>
+        <div className="map-container" style={{ height: '250px' }}>
+          <MapContainer    style={{ height: '250px', width: '50px' }} center={[location.latitude, location.longitude]} zoom={7} scrollWheelZoom={false} >
+            <TileLayer
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[location.latitude, location.longitude]}>
+              <Popup>{location.name}</Popup>
+            </Marker>
+          </MapContainer>
         </div>
-      )}
+
+        <Card.Body>
+          <Card.Title><h3>{location.name}</h3></Card.Title>
+          <Card.Text>
+            <p>{location.description}</p>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
     </div>
+    </>
   );
 };
 
