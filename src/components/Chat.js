@@ -3,7 +3,7 @@ import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
 
 const getData = (info) => data.map((item) => item[info]);
-const key = getData("API_KEY");
+const key = process.env.REACT_APP_CHAT_GPT_KEY
 const userMessage = String(getData("message"));
 
 const openai = new OpenAIApi(
