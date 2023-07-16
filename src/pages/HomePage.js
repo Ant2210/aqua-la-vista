@@ -7,7 +7,7 @@ import CarouselCountries from '../components/CarouselCountries'
 export default function HomePage() {
   return (
     <div>
-      < HeroImage />
+      <HeroImage />
       <Chat />
       <CarouselCountries />
     </div>
