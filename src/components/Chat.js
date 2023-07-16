@@ -120,32 +120,39 @@ const Chat = () => {
           our AI Bot thinks about it.
         </div>
       )}
-    <Row>
-  {response.locations?.map((location, index) => (
-    <Col key={index} lg={6} className="mb-4">
-      <Card className="overflow-hidden" style={{ width: '18rem' }}>
-        <div className="map-container" style={{ height: '250px' }}>
-          <MapContainer    style={{ height: '250px', width: '50px' }} center={[location.latitude, location.longitude]} zoom={7} scrollWheelZoom={false} >
-            <TileLayer
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[location.latitude, location.longitude]}>
-              <Popup>{location.name}</Popup>
-            </Marker>
-          </MapContainer>
-        </div>
+        <Row xs={1} sm={2} md={3} lg={4}>
+      {response.locations?.map((location, index) => (
+        <Col key={index} className="mb-4">
+          <Card className="overflow-hidden">
+            <div className="map-container" style={{ height: '250px' }}>
+              <MapContainer
+                style={{ height: '100%', width: '100%' }}
+                center={[location.latitude, location.longitude]}
+                zoom={7}
+                scrollWheelZoom={false}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={[location.latitude, location.longitude]}>
+                  <Popup>{location.name}</Popup>
+                </Marker>
+              </MapContainer>
+            </div>
 
-        <Card.Body>
-          <Card.Title><h3>{location.name}</h3></Card.Title>
-          <Card.Text>
-            <p>{location.description}</p>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
-</Row>
+            <Card.Body>
+              <Card.Title>
+                <h3>{location.name}</h3>
+              </Card.Title>
+              <Card.Text>
+                <p>{location.description}</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
     </div>
     </>
   );
