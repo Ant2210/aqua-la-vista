@@ -9,11 +9,8 @@ import { FaGithub } from "react-icons/fa";
 export default function About() {
   return (
     <div class="about-main">
-      <div>
+      <div class="article-page-intro">
         <h2 class="page-title">The Wet and Restless Team</h2>
-      </div>
-
-      <div class="about-us-text"> 
         <p>
           The Wet & The Restless team were headed up by Scrum Master Ant who coordinated 
           the completion of this project by making sure tasks were allocated and completed 
