@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300;1,400&display=swap');
 
 :root {
   --clr-light: #B2B9C3;
@@ -163,6 +163,7 @@ footer a:hover {
 .hero-header {
   color: var(--clr-dark);
   font-weight: 600;
+  font-style: italic;
   text-align: center;
   padding: 3% 3%;
   font-family: 'Montserrat', sans-serif;
@@ -222,6 +223,28 @@ footer a:hover {
   border: none;
   border-radius: 10px;
   box-shadow: 2px 2px 3px 1px var(--clr-dark);
+}
+
+.page-title {
+  text-align: center;
+  color: var(--clr-dark);
+  padding: 4% 0;
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-img {
+  height: 380px;
+  width: 440px;
+}
+.article-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {

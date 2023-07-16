@@ -9,7 +9,7 @@ const HeroImage = () => {
                 <h4>Saying Goodbye to Boring Pools, Hello to Wild Swimming Excitement!</h4>
             </div>
             <div class="hero-img-container">
-                <img src={img} class="hero-image" alt="Woman swimming the sea" />
+                <img src={img} class="hero-image" alt="Man swimming the sea" />
             </div>
         </div>
     );
