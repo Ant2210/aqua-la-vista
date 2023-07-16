@@ -264,6 +264,47 @@ footer a:hover {
   font-weight: 400;
 }
 
+.about-main {
+  width: 100%;
+  height: auto;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.about-us-text {
+  text-align: center;
+  padding: 0 6%;
+}
+
+.participant-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.participant-info {
+  padding: 2% 4%;
+}
+
+.participant-info p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gitHub-icon {
+  color: var(--clr-dark);
+  font-size: 25px;
+  padding-left: 4%;
+}
+
+
 @media screen and (max-width: 768px) {
   .navbar-nav #nav-link {
     max-width: fit-content;

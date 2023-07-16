@@ -4,7 +4,7 @@ const Article = () => {
     return (
         <div>
             <div> 
-                <h1 class="page-title"> Wellness Blog </h1>
+                <h2 class="page-title"> Wellness Blog </h2>
             </div>
 
             <div class="article-container">
