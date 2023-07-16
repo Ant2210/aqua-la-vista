@@ -5,6 +5,7 @@ import PageNav from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeroImage from "./components/HeroImage";
 import EventsList from "./components/EventsList";
+import CarouselCountries from "./components/carouselCountries";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <PageNav />
             <HeroImage />
             <EventsList />
+            <CarouselCountries />
             <Footer />
         </>
     );
