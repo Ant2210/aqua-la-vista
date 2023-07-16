@@ -196,10 +196,36 @@ footer a:hover {
   object-fit: cover;
 }
 
+/****** CAROUSEL *******/
+
 .carousel-main {
-  width: 50%;
+  width: 80%;
   height: 30%;
-  margin: 0 auto;
+  margin: 1rem auto;
+}
+
+.country-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.country-slogan {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+.country-place {
+  font-size: 1.25rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.country-desc {
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .recommendation-list {
@@ -218,7 +244,8 @@ footer a:hover {
 }
 
 .chat-div {
-  margin: 50px 50px;
+  /* margin: 50px 50px; */
+  margin: 50px auto;
   width: 80%;
   min-height: 300px;
   border: 1px solid;

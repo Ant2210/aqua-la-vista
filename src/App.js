@@ -11,7 +11,6 @@ import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
-import CarouselCountries from "./components/carouselCountries";
 import Ireland from "./pages/Ireland";
 import England from "./pages/England";
 import Scotland from "./pages/Scotland";

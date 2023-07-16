@@ -2,7 +2,7 @@ import React from 'react'
 import HeroImage from '../components/HeroImage'
 import { Navbar } from 'react-bootstrap'
 import Chat from '../components/Chat'
-import CarouselCountries from '../Components/CarouselCountries'
+import CarouselCountries from '../components/CarouselCountries'
 
 export default function HomePage() {
   return (
