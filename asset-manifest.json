@@ -1,17 +1,31 @@
 {
   "files": {
-    "main.css": "/aqua-la-vista/static/css/main.ccb298f0.css",
-    "main.js": "/aqua-la-vista/static/js/main.4d512c75.js",
+    "main.css": "/aqua-la-vista/static/css/main.7a8974d0.css",
+    "main.js": "/aqua-la-vista/static/js/main.9b930d0e.js",
     "static/js/496.bc2e39c6.chunk.js": "/aqua-la-vista/static/js/496.bc2e39c6.chunk.js",
+    "static/media/aqua-wild-swim6.png": "/aqua-la-vista/static/media/aqua-wild-swim6.40c739e43f3662807ed0.png",
+    "static/media/aqua-wild-swim4.png": "/aqua-la-vista/static/media/aqua-wild-swim4.ad7d9c25708a9533e3df.png",
+    "static/media/aqua-wild-swim7.png": "/aqua-la-vista/static/media/aqua-wild-swim7.b3e6959a1f2b35020f72.png",
+    "static/media/aqua-wild-swim5.png": "/aqua-la-vista/static/media/aqua-wild-swim5.54c2b3f5c84bf5f285cb.png",
+    "static/media/Stien.PNG": "/aqua-la-vista/static/media/Stien.e4af3e72928f0321b787.PNG",
+    "static/media/Jarek.PNG": "/aqua-la-vista/static/media/Jarek.b8267d026fe897315bc3.PNG",
+    "static/media/Ant.PNG": "/aqua-la-vista/static/media/Ant.cff32aa1b3c46d47adc7.PNG",
+    "static/media/Aiga.PNG": "/aqua-la-vista/static/media/Aiga.7fb8b9c1ee19f6d4f675.PNG",
+    "static/media/northern-ireland.webp": "/aqua-la-vista/static/media/northern-ireland.23a6ff8e3645af2a1d67.webp",
     "static/media/wild-sea-swim.jpeg": "/aqua-la-vista/static/media/wild-sea-swim.965678970b8cc4138160.jpeg",
+    "static/media/aqua-wild-swim3.png": "/aqua-la-vista/static/media/aqua-wild-swim3.30dd42e95938207b2878.png",
+    "static/media/Diane.PNG": "/aqua-la-vista/static/media/Diane.b00b029d5d0a84d265aa.PNG",
+    "static/media/scotland.webp": "/aqua-la-vista/static/media/scotland.ea6fca2245dce3d3b3bb.webp",
+    "static/media/england.webp": "/aqua-la-vista/static/media/england.e56f96fe544beb061646.webp",
+    "static/media/wales.webp": "/aqua-la-vista/static/media/wales.036cd219352fee96e22c.webp",
     "static/media/logo-transparent.png": "/aqua-la-vista/static/media/logo-transparent.4b172968396795f6155e.png",
     "index.html": "/aqua-la-vista/index.html",
-    "main.ccb298f0.css.map": "/aqua-la-vista/static/css/main.ccb298f0.css.map",
-    "main.4d512c75.js.map": "/aqua-la-vista/static/js/main.4d512c75.js.map",
+    "main.7a8974d0.css.map": "/aqua-la-vista/static/css/main.7a8974d0.css.map",
+    "main.9b930d0e.js.map": "/aqua-la-vista/static/js/main.9b930d0e.js.map",
     "496.bc2e39c6.chunk.js.map": "/aqua-la-vista/static/js/496.bc2e39c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccb298f0.css",
-    "static/js/main.4d512c75.js"
+    "static/css/main.7a8974d0.css",
+    "static/js/main.9b930d0e.js"
   ]
 }
