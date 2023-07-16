@@ -39,6 +39,7 @@ html, body {
   font-weight:bold;
   margin-right: 20px;
   padding: 10px 10px;
+  width: fit-content;
 }
 
 
