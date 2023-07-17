@@ -12,6 +12,7 @@ import {
     FaRegNewspaper,
     FaEnvelope,
     FaEarthEurope,
+    FaHeartPulse
 } from "react-icons/fa6";
 
 const PageNav = () => {
@@ -47,12 +48,12 @@ const PageNav = () => {
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
-                            to="/blog"
+                            to="/benefits"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
-                                <FaRegNewspaper />
+                                <FaHeartPulse />
                             </span>
-                            Blog
+                            Benefits
                         </Nav.Link>
                         <NavDropdown
                             title={

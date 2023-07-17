@@ -1,4 +1,3 @@
-import { NavLink } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "../assets/imgs/logo-transparent.png";
