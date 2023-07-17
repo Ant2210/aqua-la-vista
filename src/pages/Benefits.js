@@ -1,7 +1,7 @@
 import React from 'react'
 import Article from '../components/Article'
 
-export default function Blog() {
+export default function Benefits() {
   return (
     < Article />
   )

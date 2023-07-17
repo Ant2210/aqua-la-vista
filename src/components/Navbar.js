@@ -48,10 +48,11 @@ const PageNav = () => {
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
-                            to="/blog"
+                            to="/benefits"
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaHeartPulse />
+
                             </span>
                             Benefits
                         </Nav.Link>
