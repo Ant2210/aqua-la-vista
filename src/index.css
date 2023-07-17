@@ -99,6 +99,19 @@ html, body {
   box-shadow: none;
 }
 
+nav #basic-navbar-nav .dropdown .dropdown-menu {
+  background-color: var(--clr-light);
+}
+
+nav #basic-navbar-nav .dropdown .dropdown-menu .dropdown-item {
+  margin-left: 20px;
+  width: fit-content;
+}
+
+nav #basic-navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: var(--clr-light);
+}
+
 /***** FOOTER *****/
 footer {
   background-color: var(--clr-light);
@@ -248,11 +261,18 @@ footer a:hover {
 
 .chat-buttons {
   padding: 5px;
-  margin: 10px 10px;
-  background-color: rgb(104, 180, 104);
-  border: none;
-  border-radius: 10px;
+  margin: 10px 10px 10px 0;
   box-shadow: 2px 2px 3px 1px var(--clr-dark);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+
+.chat-buttons:hover {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+#chat-input {
+  margin-right: 10px;
 }
 
 /**** ARTICLE PAGE ****/

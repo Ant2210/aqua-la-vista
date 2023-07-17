@@ -72,7 +72,11 @@ const ContactForm = () => {
                     />
                 </Form.Group>
 
-                <Button variant="primary" type="submit" value="Send">
+                <Button variant="primary" type="submit" value="Send" className="chat-buttons" style={{
+                                backgroundColor: "#575ABA",
+                                color: "white",
+                                border: "none",
+                            }}>
                     Submit
                 </Button>
             </Form>
