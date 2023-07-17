@@ -109,7 +109,7 @@ const Chat = () => {
                 <div className="d-flex flex-column flex-sm-row align-items-sm-center">
                     <form
                         onSubmit={(e) => e.preventDefault()}
-                        className="mb-3 mb-sm-0">
+                        id="chat-input" className="mb-3 mb-sm-0">
                         <input
                             type="text"
                             placeholder="Enter a city..."
@@ -128,6 +128,7 @@ const Chat = () => {
                             style={{
                                 backgroundColor: "#575ABA",
                                 color: "white",
+                                border: "none"
                             }}>
                             Search
                         </Button>
@@ -139,6 +140,7 @@ const Chat = () => {
                             style={{
                                 backgroundColor: "#575ABA",
                                 color: "white",
+                                border: "none"
                             }}>
                             Find nearby
                         </Button>
