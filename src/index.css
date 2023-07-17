@@ -278,6 +278,7 @@ footer a:hover {
   margin-right: 10px;
 }
 
+/**** ARTICLE PAGE ****/
 .article-page-intro {
   text-align: center;
   padding: 4% 6%;
@@ -380,6 +381,36 @@ form .form-control {
   border: 2px solid rgba(87, 90, 186, 0.6);
 }
 
+/**** FAQ ****/
+.faq-section {
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  margin: 8% 6% 0 6%;
+}
+
+.faq-section h4 {
+  padding-top: 4%;
+}
+
+.accordion-section {
+  margin: 5% 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.faq-disclaimer {
+  text-align: center;
+  font-size: 13px;
+  margin: 0 15% 5% 15%;
+}
+
+/**** MEDIA QUERIES ****/
 @media screen and (max-width: 768px) {
   .navbar-nav #nav-link {
     max-width: fit-content;
