@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import "../index.css";
-import img from "../assets/imgs/england.webp";
+import img from "../assets/imgs/england.jpg";
 import img2 from "../assets/imgs/scotland.jpg";
 import img3 from "../assets/imgs/ireland.jpg";
 import img4 from "../assets/imgs/wales.webp";
