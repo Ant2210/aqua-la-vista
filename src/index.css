@@ -367,6 +367,11 @@ footer a:hover {
   color: var(--clr-dark);
   font-size: 25px;
   padding-left: 4%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gitHub-icon:hover {
+  transform: translateY(-3px);
 }
 
 

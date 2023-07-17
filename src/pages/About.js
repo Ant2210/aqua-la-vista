@@ -23,7 +23,7 @@ export default function About() {
           <img src={img1} className="participant-img"/>
           <p> Ant 
             <a href="https://github.com/Ant2210" target="_blank">
-              <span className="gitHub-icon">
+              <span className="gitHub-icon d-inline-block">
                 <FaGithub />
               </span>
             </a>
@@ -33,7 +33,7 @@ export default function About() {
           <img src={img2} className="participant-img"/>
           <p>Stien
             <a href="https://github.com/Vanhouttestien" target="_blank">
-              <span className="gitHub-icon">
+              <span className="gitHub-icon d-inline-block">
                 <FaGithub />
               </span>
             </a>
@@ -43,7 +43,7 @@ export default function About() {
           <img src={img3} className="participant-img"/>
           <p>Diane
             <a href="https://github.com/todiane" target="_blank">
-              <span className="gitHub-icon">
+              <span className="gitHub-icon d-inline-block">
                 <FaGithub />
               </span>
             </a>
@@ -53,7 +53,7 @@ export default function About() {
           <img src={img4} className="participant-img"/>
           <p>Jarek
             <a href="https://github.com/JarekB-dev" target="_blank">
-              <span className="gitHub-icon">
+              <span className="gitHub-icon d-inline-block">
                 <FaGithub />
               </span>
             </a>
@@ -63,7 +63,7 @@ export default function About() {
           <img src={img5} className="participant-img"/>
           <p>Aiga
             <a href="https://github.com/AiGaA" target="_blank">
-              <span className="gitHub-icon">
+              <span className="gitHub-icon d-inline-block">
                 <FaGithub />
               </span>
             </a>
