@@ -32,11 +32,11 @@ The project is deployed via Netlify and can be accessed [HERE](https://aqua-la-v
 ## **CRITERIA**
 Our team ensured we adhered to the criteria for this project by ensuring:
 
-- ✨ The app is 100% Mobile First
-- ✨ The app uses browser location 
-- ✨ Content covers the Hackathon theme of using nature to focus on exercise, socialisation and the alleviation of depression and anxiety
-- ✨ We have demonstrated a clear use of Github Projects to distribute tasks
-- ✨ Our presentation video includes a client pitch
+- ✨ The app is 100% Mobile First.
+- ✨ The app uses browser location.
+- ✨ Content covers the Hackathon theme of using nature to focus on exercise, socialisation and the alleviation of depression and anxiety.
+- ✨ We have demonstrated a clear use of Github Projects to distribute tasks.
+- ✨ Our presentation video includes a client pitch.
 
 # About Aqua La Vista
 ## **INTRODUCTION**
