@@ -52,8 +52,18 @@ const PageNav = () => {
                             className="hvr-underline-from-center">
                             <span className="purple pe-2">
                                 <FaHeartPulse />
+
                             </span>
                             Benefits
+                        </Nav.Link>
+                        <Nav.Link
+                            as={Link}
+                            to="/research"
+                            className="hvr-underline-from-center">
+                            <span className="purple pe-2">
+                                <FaRegNewspaper />
+                            </span>
+                            Research
                         </Nav.Link>
                         <NavDropdown
                             title={

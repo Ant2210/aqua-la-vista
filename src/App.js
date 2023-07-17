@@ -11,6 +11,7 @@ import Ireland from "./pages/Ireland";
 import England from "./pages/England";
 import Scotland from "./pages/Scotland";
 import Wales from "./pages/Wales";
+import ResearchPage from "./pages/ResearchPage";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/ireland" element={<Ireland />} />
             <Route path="/scotland" element={<Scotland/>} />
             <Route path="/wales" element={<Wales />} />
+            <Route path="/research" element={<ResearchPage/>} />
 
             </Routes>
         <Footer/>
