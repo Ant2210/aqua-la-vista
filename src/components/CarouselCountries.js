@@ -7,13 +7,13 @@ import img4 from "../assets/imgs/wales.webp";
 import { Link } from 'react-router-dom';
 
 
-
 function CarouselCountries() {
   return (
     <div className='carousel-main'>
+        <h2 className='text-center fst-italic' >Explore swimming destinations around the UK & Ireland</h2>
         <Carousel fade >
         <Carousel.Item>
-            <Link as= {Link} to="/england">
+            <Link as= {Link} to="/england" onClick={() => window.scrollTo(0, 0)}>
             <img
             className="d-block w-100 "
             src= {img}
@@ -25,7 +25,7 @@ function CarouselCountries() {
             </Link>
         </Carousel.Item>
         <Carousel.Item>
-            <Link as= {Link} to="/scotland">
+            <Link as= {Link} to="/scotland" onClick={() => window.scrollTo(0, 0)}>
             <img
             className="d-block w-100"
             src= {img2}
@@ -37,7 +37,7 @@ function CarouselCountries() {
             </Link>
         </Carousel.Item>
         <Carousel.Item>
-            <Link as= {Link} to="/ireland">
+            <Link as= {Link} to="/ireland" onClick={() => window.scrollTo(0, 0)}>
             <img
             className="d-block w-100"
             src= {img3}
@@ -49,7 +49,7 @@ function CarouselCountries() {
             </Link>
         </Carousel.Item>
         <Carousel.Item>
-            <Link as={Link} to="/wales">
+            <Link as={Link} to="/wales" onClick={() => window.scrollTo(0, 0)}>
             <img
             className="d-block w-100 "
             src= {img4}
